@@ -1,7 +1,7 @@
 version: '2'
 services:
   zabbix-web:
-    image: zabbix/zabbix-web-nginx-mysql
+    image: zabbix/zabbix-web-nginx-mysql:alpine-3.4.*
     env_file: "variables.env"
     links:
       - mysql-server
